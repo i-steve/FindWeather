@@ -15,9 +15,6 @@
 		4398008628A50DB8005775E3 /* FindWeather.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4398008428A50DB7005775E3 /* FindWeather.xcdatamodeld */; };
 		4398008828A50DE1005775E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4398008728A50DE1005775E3 /* Assets.xcassets */; };
 		4398008B28A50DE1005775E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4398008928A50DE1005775E3 /* LaunchScreen.storyboard */; };
-		4398009628A50DE1005775E3 /* FindWeatherTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4398009528A50DE1005775E3 /* FindWeatherTests.swift */; };
-		439800A028A50DE1005775E3 /* FindWeatherUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4398009F28A50DE1005775E3 /* FindWeatherUITests.swift */; };
-		439800A228A50DE1005775E3 /* FindWeatherUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439800A128A50DE1005775E3 /* FindWeatherUITestsLaunchTests.swift */; };
 		439800AF28A53824005775E3 /* WeatherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 439800AE28A53822005775E3 /* WeatherData.swift */; };
 /* End PBXBuildFile section */
 
@@ -50,10 +47,7 @@
 		4398008A28A50DE1005775E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4398008C28A50DE1005775E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4398009128A50DE1005775E3 /* FindWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4398009528A50DE1005775E3 /* FindWeatherTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWeatherTests.swift; sourceTree = "<group>"; };
 		4398009B28A50DE1005775E3 /* FindWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		4398009F28A50DE1005775E3 /* FindWeatherUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWeatherUITests.swift; sourceTree = "<group>"; };
-		439800A128A50DE1005775E3 /* FindWeatherUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FindWeatherUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		439800AE28A53822005775E3 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -86,8 +80,6 @@
 			isa = PBXGroup;
 			children = (
 				4398007A28A50DB6005775E3 /* FindWeather */,
-				4398009428A50DE1005775E3 /* FindWeatherTests */,
-				4398009E28A50DE1005775E3 /* FindWeatherUITests */,
 				4398007928A50DB6005775E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -117,23 +109,6 @@
 				4398008428A50DB7005775E3 /* FindWeather.xcdatamodeld */,
 			);
 			path = FindWeather;
-			sourceTree = "<group>";
-		};
-		4398009428A50DE1005775E3 /* FindWeatherTests */ = {
-			isa = PBXGroup;
-			children = (
-				4398009528A50DE1005775E3 /* FindWeatherTests.swift */,
-			);
-			path = FindWeatherTests;
-			sourceTree = "<group>";
-		};
-		4398009E28A50DE1005775E3 /* FindWeatherUITests */ = {
-			isa = PBXGroup;
-			children = (
-				4398009F28A50DE1005775E3 /* FindWeatherUITests.swift */,
-				439800A128A50DE1005775E3 /* FindWeatherUITestsLaunchTests.swift */,
-			);
-			path = FindWeatherUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -280,7 +255,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4398009628A50DE1005775E3 /* FindWeatherTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -288,8 +262,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				439800A228A50DE1005775E3 /* FindWeatherUITestsLaunchTests.swift in Sources */,
-				439800A028A50DE1005775E3 /* FindWeatherUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
