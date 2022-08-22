@@ -21,15 +21,15 @@ class ViewController: UIViewController, UITextFieldDelegate {
     }
     
     let weatherManager = WeatherManager()
-    //let weatherData = WeatherData(from: <#Decoder#>)
+    let weatherData = WeatherData()
     
     @IBAction func searchPressed(_ sender: UIButton) {
         weatherManager.fetchWeather(city: searchField.text)
         searchField.endEditing(true)  // dismisses the keyboard
         
-       // temperatureLabel.text = String(weatherData.current.temp_c)
-       // locationLabel.text = weatherData.location.name
-       // weatherLabel.text = weatherData.current.condition.text
+        temperatureLabel.text = String(weatherData.temp_c)
+        locationLabel.text = weatherData.name
+        weatherLabel.text = weatherData.text
     }
     
     

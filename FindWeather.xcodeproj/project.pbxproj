@@ -54,7 +54,7 @@
 		4398008C28A50DE1005775E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4398009128A50DE1005775E3 /* FindWeatherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindWeatherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4398009B28A50DE1005775E3 /* FindWeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FindWeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		439800AE28A53822005775E3 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherData.swift; sourceTree = "<group>"; };
+		439800AE28A53822005775E3 /* WeatherData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = WeatherData.swift; path = "../New Group/WeatherData.swift"; sourceTree = "<group>"; };
 		96B71859F95C4FB6E22DBDCE /* Pods-FindWeather-FindWeatherUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindWeather-FindWeatherUITests.release.xcconfig"; path = "Target Support Files/Pods-FindWeather-FindWeatherUITests/Pods-FindWeather-FindWeatherUITests.release.xcconfig"; sourceTree = "<group>"; };
 		997062BAA99549F38602A20E /* Pods-FindWeatherTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FindWeatherTests.release.xcconfig"; path = "Target Support Files/Pods-FindWeatherTests/Pods-FindWeatherTests.release.xcconfig"; sourceTree = "<group>"; };
 		A56A07157AFFC30B013E0E0A /* Pods_FindWeatherTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FindWeatherTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,16 +116,24 @@
 			children = (
 				4398007B28A50DB6005775E3 /* AppDelegate.swift */,
 				4398007D28A50DB6005775E3 /* SceneDelegate.swift */,
-				4398007F28A50DB7005775E3 /* ViewController.swift */,
-				4355EE1E28AB7CA100280161 /* WeatherManager.swift */,
-				439800AE28A53822005775E3 /* WeatherData.swift */,
 				4398008128A50DB7005775E3 /* Main.storyboard */,
+				4398007F28A50DB7005775E3 /* ViewController.swift */,
+				43B8E0A028AE1EC800AE921C /* Model */,
 				4398008728A50DE1005775E3 /* Assets.xcassets */,
 				4398008928A50DE1005775E3 /* LaunchScreen.storyboard */,
 				4398008C28A50DE1005775E3 /* Info.plist */,
 				4398008428A50DB7005775E3 /* FindWeather.xcdatamodeld */,
 			);
 			path = FindWeather;
+			sourceTree = "<group>";
+		};
+		43B8E0A028AE1EC800AE921C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				4355EE1E28AB7CA100280161 /* WeatherManager.swift */,
+				439800AE28A53822005775E3 /* WeatherData.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		6FF0CAD019E1E5DFF452995C /* Frameworks */ = {
@@ -148,7 +156,6 @@
 				B90DDC0015702D0D12189709 /* Pods-FindWeatherTests.debug.xcconfig */,
 				997062BAA99549F38602A20E /* Pods-FindWeatherTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
