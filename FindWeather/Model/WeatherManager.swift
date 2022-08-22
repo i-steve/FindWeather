@@ -13,7 +13,7 @@ struct WeatherManager{
     func fetchWeather(city: String?){
         if let city = city{
             //url
-            let urlString = "https://api.weatherapi.com/v1/current.json?key=4e0772ea2dba4e98975111642221108&q=\(city)&aqi=no"
+            let urlString = "https://api.weatherapi.com/v1/current.json?key=724ff428144746f89d574725222208&q=\(city)&aqi=no"
             let url = URL(string: urlString)
             performCall(url: url)
         }
@@ -21,7 +21,7 @@ struct WeatherManager{
     
     func performCall(url: URL?){
         //session task
-            if let url = url{
+        if let url = url{
             //url session
             let session = URLSession(configuration: .default)
             
@@ -33,11 +33,11 @@ struct WeatherManager{
                 }
                 
                 if let safeData = data{
-                    let decoder = JSONDecoder()
+                    
                     do{
-                        let decodedData = try JSONSerialization.jsonObject(with: safeData, options: .mutableContainers)
-                        let parsedData = parseWeatherData(decodedData: decodedData)
-                        //print(parsedData)
+                        let data = try JSONSerialization.jsonObject(with: safeData, options: .mutableContainers)
+                        let parsedData = Mapper<WeatherData>().map(JSON: data as! [String : Any])
+                        print(parsedData)
                     }
                     catch{
                         print(error)
@@ -50,9 +50,4 @@ struct WeatherManager{
         }
     }
     
-    
-    func parseWeatherData(decodedData: AnyObject) -> WeatherData{
-        let parsedData = Mapper<WeatherData>().map(JSON: decodedData as! [String : Any])
-        return parsedData!
-    }
 }

@@ -30,24 +30,40 @@ import ObjectMapper
 
 class WeatherData: Mappable{
     
-    var temp_c: Int = 0
-    var name: String = ""
-    var text: String = ""
-
-    required init?(map: Map)
-    {
+    //name
+    class Location: Mappable{
+        var name: String = ""
+        
+        required init?(map: Map) {
+            
+        }
+        
+        func mapping(map: Map) {
+            name        <- map["name"]
+        }
+    }
+    
+    //temp_c
+    class Current: Mappable{
+        var temp_c: Int = 0
+        
+        required init?(map: Map) {
+            
+        }
+        
+        func mapping(map: Map) {
+            temp_c      <- map["temp_c"]
+        }
+    }
+    
+    
+    required init?(map: Map) {
         
     }
     
-    init()
-    {
+    func mapping(map: Map) {
         
     }
-
-    func mapping(map: Map) {
-        temp_c      <- map["temp_c"]
-        name        <- map["name"]
-        text        <- map["text"]
-    }
+    
 }
 
